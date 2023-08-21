@@ -9,7 +9,9 @@ import com.bnm.dev.model.User;
 public interface AuthorisationService {
 	Authorisation save(Authorisation authorisation);
 	
-	Authorisation loadAuthorisationById(Integer id);
+	Authorisation loadAuthorisationById(Long id);
 	
 	List<Authorisation> getAuthorisationsInProgress(String status);
+	
+	Authorisation loadAuthByTransactionID(String transactionId);
 }

@@ -26,7 +26,15 @@ public class Authorisation {
 	
 	@Column
 	private String status;
-
+	
+	@Column
+	private String NIF;
+	
+	@Column
+	private String phone;
+	
+	public static String IN_PROGRESS="IN_PROGRESS", AUTHORIZED="AUTHORIZED", REJECTED="REJECTED";
+	
 	public Long getId() {
 		return id;
 	}
@@ -66,4 +74,21 @@ public class Authorisation {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	public String getNIF() {
+		return NIF;
+	}
+
+	public void setNIF(String nIF) {
+		NIF = nIF;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
 }

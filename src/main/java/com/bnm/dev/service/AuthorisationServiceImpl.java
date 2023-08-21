@@ -18,13 +18,13 @@ public class AuthorisationServiceImpl implements AuthorisationService {
 	
 	@Override
 	public Authorisation save(Authorisation authorisation) {
-		// TODO Auto-generated method stub
-		return null;
+		authRepo.save(authorisation);
+		return authorisation;
 	}
 
 	@Override
-	public Authorisation loadAuthorisationById(Integer id) {
-		Authorisation auth = authRepo.findById(id);
+	public Authorisation loadAuthorisationById(Long id) {
+		Authorisation auth = authRepo.findById(id).get();
 		
 		return auth;
 	}
@@ -34,6 +34,12 @@ public class AuthorisationServiceImpl implements AuthorisationService {
 		List<Authorisation> auths = authRepo.findByStatus(status);
 		
 		return auths;
+	}
+
+	@Override
+	public Authorisation loadAuthByTransactionID(String transactionId) {
+		Authorisation auth = authRepo.findByTransactionID(transactionId);
+		return auth;
 	}
 
 }

@@ -56,8 +56,8 @@
 	    <tr th:each="auth:${authorisations}">
 	      <td th:text="${auth.IBAN}"></td>
 	      <td th:text="${auth.legalName}">Otto</td>
-	      <th><a th:href="@{/update?id=${auth.id}&type=1}">Authorize</a></th>
-	      <th><a th:href="@{/update?(id=${auth.id})&type=2}">Reject</a></th>
+	      <th><a th:href="@{/update(type=1, id=${auth.id})}">Authorize</a></th>
+	      <th><a th:href="@{/update(type=2, id=${auth.id})}">Reject</a></th>
 	    </tr>
 	  </tbody>
     </table>

@@ -9,4 +9,5 @@ import com.bnm.dev.model.Authorisation;
 public interface AuthorisationRepository  extends JpaRepository<Authorisation, Long> {
 	List<Authorisation> findByStatus(String status);
 	Authorisation findById(Integer id);
+	Authorisation findByTransactionID(String transactionId);
 }
