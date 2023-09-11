@@ -1,0 +1,15 @@
+com\bnm\dev\repository\UserRepository.class
+com\bnm\dev\model\User.class
+com\bnm\dev\service\UserServiceImpl.class
+com\bnm\dev\web\AuthorisationController.class
+com\bnm\dev\Application.class
+com\bnm\dev\service\AuthorisationService.class
+com\bnm\dev\service\AuthorisationServiceImpl.class
+com\bnm\dev\web\HomeController.class
+com\bnm\dev\web\RegistrationController.class
+com\bnm\dev\repository\AuthorisationRepository.class
+com\bnm\dev\config\SecurityConfiguration.class
+com\bnm\dev\model\Role.class
+com\bnm\dev\dto\UserRegistrationDto.class
+com\bnm\dev\model\Authorisation.class
+com\bnm\dev\service\UserService.class
